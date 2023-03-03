@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pass-keeper"
+version = "0.1.0"
+description = "A simple local password manager"
+authors = ["duxevy <duxevy@github.com>"]
+readme = "README.md"
+packages = [{include = "pass_keeper"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.2"
+PyJWT = "^2.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
