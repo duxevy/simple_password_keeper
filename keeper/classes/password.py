@@ -1,11 +1,10 @@
 import random
-import os
 
 from keeper.config import INIT_QUERY
 
 
 class Password:
-    def __init__(self, strong: int, length: int = 8):
+    def __init__(self, strong: int, length: int = 10):
         self.password_length = length
         self.strong = strong
         self.password = ""
@@ -29,5 +28,5 @@ class Password:
         return self.password_length
 
 
-pass_object = Password(5, 12)
+pass_object = Password(5)
 print(pass_object.create_passwords())
